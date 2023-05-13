@@ -1,0 +1,28 @@
+package BankSystem;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Employee employee = new Employee("mona", 30, "Female", 2000, "IT");
+        employee.PrintData();
+        System.out.println("Salary: " + employee.getSalary());
+        System.out.println("Department: " + employee.getDepartment());
+
+        customer customer = new customer("mona", 25, "female", "112233445", "10 ZAYED St");
+
+
+
+        Bankaccount Bank = new Bankaccount();
+        Bank.setBalance(1000);
+        Bankaccount Bank2 = new Bankaccount();
+        Bank.setBalance(1000,20);
+        System.out.println(Bank.getBalance());
+        System.out.println(Bank2.getBalance());
+
+
+
+
+
+    }
+}
+
